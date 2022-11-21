@@ -7,7 +7,7 @@ const AppointmentOption = ({option, setModal,modal}) => {
         setSlot(modal.selectSlot=e.target.value)
     } 
     const handleModal = ()=>{
-        const dataForModal = [{"name":name},{"slot":slot}]
+        const dataForModal = [{"name":name,"slot":slot,"slots":slots}]
         setModal(dataForModal)
     }
 

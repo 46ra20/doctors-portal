@@ -4,6 +4,8 @@ import MainLayOut from "../LayOut/MainLayOut/MainLayOut";
 import Appointment from "../Pages/Appointment/Appointment/Appointment";
 import About from "../Pages/About/About";
 import Login from "../Pages/UserLogForm/Login/Login";
+import Register from "../Pages/UserLogForm/Login/Register";
+import UploadImage from "../Pages/sheared/UploadImage";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +31,14 @@ export const router = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login></Login>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
+            },
+            {
+                path:'/file-upload',
+                element:<UploadImage></UploadImage>
             }
         ]
     }

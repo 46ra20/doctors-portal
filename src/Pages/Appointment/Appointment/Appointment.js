@@ -9,7 +9,7 @@ const Appointment = () => {
     const [modal, setModal] = useState({}) 
     const [appointmentOptions, setAppointmentOptions] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/appointmentOptions')
+        fetch('http://localhost:5001/appointmentOptions')
         .then(res => res.json())
         .then(data => setAppointmentOptions(data))
     },[])
